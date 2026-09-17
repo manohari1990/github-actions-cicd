@@ -1,0 +1,11 @@
+name: cicd pipiline
+on: 
+  push:
+jobs:
+  code: 
+    uses: ./.github/workflows/code.yml  # calling code.yml workflow
+  build:
+    needs: code
+    uses: ./.github/workflows/build.yml
+
+  
