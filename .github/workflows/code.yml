@@ -1,12 +1,15 @@
 #Name of the workflow
-name: Code  
+name: Code
+
 #When the workflow runs
 on: 
   push: 
+
 # jobs in workflow
 jobs:
   code-checkout: 
     runs-on: ubuntu-latest
+    # steps in the workflow
     steps:
       - name: Clone the code
         uses: actions/checkout@v7
