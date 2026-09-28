@@ -1,0 +1,11 @@
+name: Test
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test the code
+        run: echo "Testing the code!"
